@@ -63,7 +63,6 @@ def crete_choose_done(info):
                 player = random.choice(list(move_set))
                 game_choosed[i[0]] = player
                 set_players.difference_update(player)
-                print(game_choosed, 'gggggggggggggggggggggggggggggggggggg')
             stop = True
         except IndexError:
             ch += 1
@@ -114,8 +113,6 @@ def show_santa(name):
     for i in players:
         if i[0] == person_information[1].lower():
             person = i
-    print(i, person_information, '_____________________')
-    print(person)
     return render_template('show_santa.html', person=person)
 
 
@@ -133,8 +130,11 @@ def new_secret_santa():
 
         games = db.engine.execute('select distinct game_name from choose;').fetchall()
         if not games:
-            games.append([])
-        if game_name in tuple(games[0]):
+            games.append([' '])
+        all_games = []
+        for i in games:
+            all_games.append(i[0])
+        if game_name.lower() in all_games:
             flash('Please Enter enter another Game Name')
             return redirect(url_for('new_secret_santa'))
 
@@ -160,7 +160,6 @@ def new_secret_santa():
                 return redirect(url_for('new_secret_santa'))
 
         game_choosed = crete_choose_done(dict_info)
-        print(game_choosed, '__________________________-')
         if not game_choosed:
             flash("We can't create game with your settings")
             return redirect(url_for('new_secret_santa'))
@@ -182,4 +181,4 @@ def new_secret_santa():
 
 
 if __name__ == '__main__':
-    app.run(port=5001,debug=True)
+    app.run(port=5001, debug=True)
