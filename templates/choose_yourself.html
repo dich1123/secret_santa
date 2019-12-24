@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Santa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+{% include 'audio.html' %}
+{% include 'flashes.html' %}
+
+<div class="choose_you">
+    <h2>Please, choose yourself in the list below</h2>
+    <form method="post">
+        <select name="player">
+            {% for name in players %}
+                <option>{{ name[0].title() }}</option>
+            {% endfor %}
+        </select><br>
+        <input class="create_submit" type="submit" value="Choose">
+    </form>
+    <p><img src="{{ url_for('static', filename='images/bow.png') }}" width="200px"></p>
+    {% include 'main_page_but.html' %}
+
+</div>
+</body>
+</html>

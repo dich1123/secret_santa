@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secret DiCh</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+{% include 'audio.html' %}
+{% include 'flashes.html' %}
+
+<div class="index_body">
+    <h3>Hey! You want some presents?!
+        Just tell someone that you want to play...</h3>
+    <h1>SECRET SANTA!</h1>
+    <img width="300px" src="{{ url_for('static', filename='images/tenor.gif' ) }}"><br>
+    <h2>If you already have Game Name, enter it below</h2>
+    <form method="post">
+        <input class="game_name_enter" type="text" name="game_name" placeholder="cool game with my friends">
+        <input class="create_submit" type="submit" value="LetsGo!">
+    </form>
+    <h2>If you don't have Game Name yet, you can create new game!)</h2>
+    <div class="create_game_link">
+        <a style="text-decoration: none;" href="{{ url_for('new_secret_santa') }}">Create Game</a>
+    </div>
+    __FROM_DICH_WITH_LOVE__
+</div>
+
+
+</body>
+</html>

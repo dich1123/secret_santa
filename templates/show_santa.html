@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Santa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+{% include 'audio.html' %}
+{% include 'flashes.html' %}
+
+<div class="santa_big_name">
+    <h2>Hey! {{ person[0].title() }}! <br> You're Secret Santa for...</h2>
+    <div class="santa_name"><h1>{{ person[1].title() }}</h1></div>
+    <img src="{{ url_for('static', filename='images/giphy.gif' ) }}" width="300px">
+    {% include 'main_page_but.html' %}
+</div>
+</body>
+</html>

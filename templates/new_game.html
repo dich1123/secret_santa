@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Santa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+{% include 'audio.html' %}
+{% include 'flashes.html' %}
+
+<div class="creating_form">
+    <form method="post">
+        <h3>Please Enter the Game Name</h3>
+        <input class="game_name_enter" type="text" name="game_name" placeholder="example">
+        <h3>Please Enter players separated by commas</h3>
+        <textarea class="players" name="players" placeholder="Dima,Vasya"></textarea>
+        <h3>Please Enter forbidden connections<br> separated by semicolon</h3>
+        <textarea class="players" name="forbidden_players" placeholder="Dima,Vasya;Kolia,Petya,Vasya;"></textarea><br>
+        <input class="create_submit" type="submit" value="Create">
+    </form>
+    {% include 'main_page_but.html' %}
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+.creating_form{
+    background: #009B77;
+    width: 700px;
+    height: 800px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+}
+.game_name_enter{
+    text-align: center;
+    width: 500px;
+    height: 30px;
+    font-size: 20px;
+}
+.players{
+    width: 500px;
+    height: 200px;
+    resize: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.create_submit{
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+}
+
+h3{
+    margin: 10px;
+    padding: 5px;
+}
+
+.error{
+    background: #ff7575;
+
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.error_div{
+    width: 320px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.index_body{
+    background: #009B77;
+    height: 900px;
+    width: 600px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.create_game_link{
+    width: 240px;
+    height: 40px;
+    background: #ff8787;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 30px;
+
+}
+.choose_you{
+    background: #009B77;
+    height: 520px;
+    width: 500px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+}
+select{
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.santa_big_name{
+    background: #009B77;
+    height: 520px;
+    width: 450px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.santa_name{
+    font-size: 20px;
+    background: #009B10;
+}
+.main_page{
+    margin: 20px auto 0px;
+    padding: 15px;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    background: #ff8787;
+    font-size: 22px;
+}
