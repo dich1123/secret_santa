@@ -44,25 +44,29 @@ class ChooseDone(db.Model):
 
 
 def crete_choose_done(info):
+    print(info)
     list_info = []
     set_players = set()
     for i in info.keys():
         list_info.append([i, info[i]])
         set_players.add(i)
     list_info = sorted(list_info, key=lambda x: len(x[1]['forbidden_players']), reverse=True)
+    print(list_info)
     ch = 0
     stop = False
+    set_players_out = copy.copy(set_players)
 
     while not stop:
+        set_players = copy.copy(set_players_out)
         try:
             game_choosed = {}
             for i in list_info:
                 move_set = copy.copy(set_players)
                 for j in i[1]['forbidden_players']:
-                    move_set.difference_update(j)
+                    move_set.discard(j)
                 player = random.choice(list(move_set))
                 game_choosed[i[0]] = player
-                set_players.difference_update(player)
+                set_players.discard(player)
             stop = True
         except IndexError:
             ch += 1
@@ -140,7 +144,8 @@ def new_secret_santa():
 
         dict_info = {}
         for i in players.split(','):
-            dict_info[i.strip().lower()] = {'game': game_name.strip().lower(), 'forbidden_players': set(i.strip().lower())}
+            dict_info[i.strip().lower()] = {'game': game_name.strip().lower(),
+                                            'forbidden_players': {i.strip().lower(), }}
             for j in forbidden_players.split(';'):
                 names = j.split(',')
                 names = list(map(lambda x: x.strip().lower(), names))
