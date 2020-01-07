@@ -17,6 +17,17 @@ db entry with GAME NAME and 1 variant of secret santa game(for choosed players a
 choosed forbidden options). After that you can see names for whom each players are 
 secret santa. 
 
+Deploy
+-
+
+- You can deploy this app using Heroku.
+- Procfile already added
+- You can see help info here: https://stackabuse.com/deploying-a-flask-application-to-heroku/
+
+- You can try on my heroku(can be deleted): https://secret-santa-dich.herokuapp.com/
+
  Authors
  -
- -Cherenkov Dima(DiCh)
+ - Cherenkov Dima(DiCh)
+ 
+ \_\_FROM_DICH_WITH_LOVE\_\_
