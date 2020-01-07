@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2256907b-eabf-47ca-9ca4-f06e5e23cb20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/santa.db" beforeDir="false" afterPath="$PROJECT_DIR$/santa.db" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,12 +37,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1VNiEF2CGV4i2s9CV5nCDvrVDad" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -115,7 +115,10 @@
       <workItem from="1577179308040" duration="6677000" />
       <workItem from="1577186460389" duration="6538000" />
       <workItem from="1577205085695" duration="2233000" />
-      <workItem from="1577212222741" duration="6629000" />
+      <workItem from="1577212222741" duration="7390000" />
+      <workItem from="1577255350778" duration="3472000" />
+      <workItem from="1577376972215" duration="121000" />
+      <workItem from="1578391942040" duration="1233000" />
     </task>
     <servers />
   </component>
@@ -127,7 +130,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
